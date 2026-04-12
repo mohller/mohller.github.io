@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research projects by Leonel Morejón including CRISP, MICRO, Pierre Auger Collaboration, CRPropa, and FLUKA development.">
+  <title>Projects | Leonel Morejón</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="name">Leonel Morejón</span>
+        <span class="title">Theoretical Astroparticle Physicist • Postdoctoral Researcher, Bergische Universität Wuppertal</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="mailto:leonel.morejon@uni-wuppertal.de">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Research Projects</h1>
+      <p>Detailed overview of my current and past research projects in theoretical astroparticle physics.</p>
+    </section>
+
+    <!-- CRISP -->
+    <section id="crisp" class="card">
+      <div class="project-header">
+        <img src="assets/images/crisp_logo.png" alt="CRISP package logo" class="project-logo" onerror="this.style.display='none'">
+        <div>
+          <h3>CRISP Package</h3>
+          <div class="card-meta">Closed-form Probability Distribution Functions for UHECR Propagation</div>
+        </div>
+      </div>
+      <p>CRISP is a Python package designed for efficient computation of Ultra-High-Energy Cosmic Ray (UHECR) propagation quantities using closed-form probability distribution functions. The package provides a fast and accurate alternative to traditional Monte Carlo simulations for both in-source and extragalactic propagation scenarios.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li><strong>Closed-form solutions:</strong> Analytical probability distribution functions for rapid calculations</li>
+        <li><strong>Flexible scenarios:</strong> Applicable to both in-source and extragalactic propagation</li>
+        <li><strong>Computational efficiency:</strong> Significantly faster than traditional Monte Carlo methods</li>
+        <li><strong>Python-based:</strong> Easy integration with other simulation frameworks</li>
+      </ul>
+      <strong>Applications:</strong> Source population modeling, composition analysis at Earth, multimessenger predictions (neutrinos and gamma-rays), statistical studies requiring many propagation calculations.
+      <div class="card-actions">
+        <a href="https://doi.org/10.1051/0004-6361/202557405" target="_blank" rel="noopener noreferrer" class="btn btn-outline">📄 Publication (A&A)</a>
+        <a href="https://github.com/mohller/crisp" target="_blank" rel="noopener noreferrer" class="btn">📦 GitHub</a>
+      </div>
+    </section>
+
+    <!-- CRPropa Development (NEW SEPARATE SECTION) -->
+    <section id="crpropa" class="card">
+      <div class="project-header">
+        <img src="assets/images/crpropa_logo.png" alt="MICRO project logo" class="project-logo" onerror="this.style.display='none'">
+        <div>
+          <h3>CRPropa Development</h3>
+          <div class="card-meta">Open-Source Framework for Cosmic-Ray Propagation</div>
+        </div>
+      </div>
+      <p>CRPropa is a modular framework for simulating the propagation of ultra-high-energy cosmic rays, gamma-rays, and neutrinos through astrophysical environments. As a core developer, I contribute to extending its physics capabilities and computational efficiency.</p>
+      <strong>My Contributions:</strong>
+      <ul>
+        <li>Implementation of advanced hadronic interaction models (EPOS-LHC, QGSJET-II, SIBYLL)</li>
+        <li>Development of analytic stochastic interactions for improved performance</li>
+        <li>Extended nuclear cross sections to include masses beyond iron</li>
+        <li>Documentation, testing, and community support</li>
+      </ul>
+      <strong>Applications:</strong> UHECR source modeling, composition studies at Earth, multimessenger predictions, parameter space exploration for observatory analyses.
+      <div class="card-actions">
+        <a href="https://crpropa.desy.de" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🌐 Official Website</a>
+        <a href="https://github.com/CRPropa/CRPropa-3" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+      </div>
+    </section>
+
+    <!-- MICRO -->
+    <section id="micro" class="card">
+      <div class="project-header">
+        <img src="assets/images/micro_logo.png" alt="MICRO project logo" class="project-logo" onerror="this.style.display='none'">
+        <div>
+          <h3>MICRO Project</h3>
+          <div class="card-meta">Microscopic Processes in Cosmic-Ray Air Showers (DFG-ANR)</div>
+        </div>
+      </div>
+      <p>The MICRO project is a collaborative DFG-ANR (German-French) research initiative investigating the origins of Ultra-High Energy Cosmic Rays by using state-of-the-art methods in the field. The project focuses on bursting scenarios of UHECR sources by improving existing simulation tools, as well as combining experimental data and simulations to explain the observations and their connection with other messenger particles like gamma rays and neutrinos.</p>
+      <strong>Research Objectives:</strong>
+      <ul>
+        <li>Hadronic interaction models: Implementing in CRPropa for source simulations</li>
+        <li>Source simulations: Inclusion of temporal effects in source simulations of bursting sources</li>
+        <li>Composition studies: Improved propagation tools to evolve UHECR mass composition from source to Earth</li>
+        <li>Observatory uncertainties: Refined tools to quantify uncertainties and enhanced model comparison</li>
+      </ul>
+      <strong>My Contributions:</strong> Integration of advanced hadronic models (Sibyll, EPOS, QGSJET) in CRPropa, CRPropa simulations for propagation tensors, stochastic propagation methods, website creation, deployment and maintainance.
+      <div class="card-actions">
+        <a href="https://micro-uhecr.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🌐 Project Website</a>
+        <a href="https://github.com/micro-uhecr/him_crpropa" target="_blank" rel="noopener noreferrer" class="btn">📦 GitHub</a>
+      </div>
+    </section>
+
+    <!-- Pierre Auger -->
+    <section id="auger" class="card">
+      <div class="project-header">
+        <img src="assets/images/pao_logo.jpg" alt="MICRO project logo" class="project-logo" onerror="this.style.display='none'">
+        <div>
+          <h3>Pierre Auger Collaboration</h3>
+          <div class="card-meta">World's Largest Ultra-High-Energy Cosmic Ray Observatory</div>          
+        </div>
+      </div>
+      <p>The Pierre Auger Observatory is the world's largest facility for studying UHECRs, located in Mendoza Province, Argentina. The observatory uses a hybrid detection technique combining surface detectors and fluorescence telescopes.</p>
+      <strong>My Contributions:</strong> Phenomenoloy and multi-messenger studies, propagation composition studies with propagation models, temporal effects in the Galaxy using models of the Galactic Magnetic Field.
+      <strong>Key Research Areas:</strong> Energy spectrum, mass composition, arrival direction anisotropies, multimessenger searches, source identification.
+      <div class="card-actions">
+        <a href="https://www.auger.org" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🌐 Official Website</a>
+      </div>
+    </section>
+
+    <!-- FLUKA Collaboration (NEW SEPARATE SECTION) -->
+    <section id="fluka" class="card">
+      <h3>⚛️ FLUKA & Flair</h3>
+      <div class="card-meta">Monte Carlo Particle Transport Code</div>
+      <p>FLUKA is a widely used nuclear / particle physics Monte Carlo simulation package for a variety of applications. Flair is a advanced user interface to work with Fluka and assist simulation related tasks ranging from building complex geometries to perform advanced setups to visualisation. As a member of the FLUKA collaboration, I contributed to Fluka schools and became and advanced user. I performed simulations for neutron diffusion, proton-target collisions, radiation dose and radiation thermomechanical stress studies for ISOLDE. I also performed radiation studies for laser-matter interaction experiments to produce dose estimations and detector designs in ELI-Beamlines.</p>
+      <strong>My Contributions:</strong>
+      <ul>
+        <li>Teaching on the 17th and 18th Fluka courses</li>
+        <li>Implemented advanced geometries in Flair and performed simulations for the beam dump energy deposition (<a href="https://cds.cern.ch/record/1711193">CERN-ACC-Note-2014-0040</a>, <a href="https://cds.cern.ch/record/1711193">CERN-ACC-Note-2014-0040</a>) the and the target storage of HIE-ISOLDE</li>
+        <li>Estimates of radiation dose and shielding requirements for laser-matter interactions experiments in ELI-Beamlines (<a href="https://doi.org/10.1016/j.mre.2017.03.003">Matter Radiat. Extremes 2, 149–176 (2017)</a>)</li>
+        <li>Fluka simulations for the design of an X-ray spectrometer in ELI-Beamlines (<a href="https://doi.org/10.1063/1.5040979">Rev. Sci. Instrum. 89, 085118 (2018)</a>)</li>
+      </ul>
+      <div class="card-actions">
+        <a href="http://www.fluka.org" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🌐 FLUKA INFN</a>
+        <a href="https://fluka.cern" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🌐 CERN FLUKA</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Leonel Morejón • Bergische Universität Wuppertal</p>
+      <div class="footer-links">
+        <a href="https://orcid.org/0000-0003-1494-2624" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57215412908" target="_blank" rel="noopener noreferrer">Scopus</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
